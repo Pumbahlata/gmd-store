@@ -1,18 +1,23 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
 .app {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 1.5rem 5%;
   height: 100vh;
   background: linear-gradient(
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.3)
     ),
-    url("https://img.freepik.com/vector-gratis/plantilla-marco-degradado-halloween_23-2149083045.jpg");
+    url("https://i.pinimg.com/564x/0d/50/e4/0d50e46d81b0f3044ca856723f4664bd.jpg");
   background-size: cover;
   background-position: center;
 }
 
-h1 {
+/* h1 {
   color: rgb(77, 1, 77);
   text-align: center;
 }
@@ -30,4 +35,4 @@ button {
   cursor: pointer;
   margin-top: 15px;
   margin-bottom: 30px;
-}
+} */
