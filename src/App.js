@@ -6,6 +6,8 @@ import Footer from "./components/Footer/Footer";
 import "react-toastify/dist/ReactToastify.css";
 import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemCount from "./components/ItemCount/ItemCount";
+import ItemDetailsContainer from "./components/ItemDetailsContainer/ItemDetailsContainer";
 
 // const messageSuccess = () => {
 //   toast.success("Se envio el texto con éxito!", {
@@ -35,9 +37,10 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 
 const App = () => {
   return (
-    <div className="bodyComplete flex flex-col relative app">
+    <div className=" bg-slate-100">
       <NavBar />
-      <ItemListContainer greeting={"Saludos!"} />
+      <p className=" text-4xl text-center m-5">Todos los productos</p>
+      <ItemListContainer />
     </div>
   );
 
