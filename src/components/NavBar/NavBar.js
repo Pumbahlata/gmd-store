@@ -1,31 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 
 const NavBar = () => {
   return (
     <nav className="flex justify-between items-center w-full bg-slate-300 p-7">
-      <a
-        href="/"
+      <Link
+        to={"/"}
         alt="logo"
         className="cursor-pointer text-orange-300 font-medium text-xl "
       >
         GMD STORE
         {/* <img src="/images/logo/logo.png" alt="Logo" /> */}
-      </a>
+      </Link>
       <ul className="list-none p-0 flex items-center">
         <li className="relative mr-7">
-          <a href="/category/Nintendo">Nintendo</a>
+          <Link to={"/category/Nintendo"}>Nintendo</Link>
         </li>
         <li className="relative mr-7">
-          <a href="/category/Playstation">Playstation</a>
+          <Link to={"/category/Playstation"}>Playstation</Link>
         </li>
         <li className="relative mr-7">
-          <a href="/category/Xbox">Xbox</a>
+          <Link to={"/category/Xbox"}>Xbox</Link>
         </li>
         <li className="relative mr-7">
-          <a className="text-black" href="/cart">
+          <Link className="text-black" to={"/cart"}>
             <CartWidget />
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

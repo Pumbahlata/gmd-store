@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ItemCount = ({ amount }) => {
   const [count, setCount] = useState(0);
@@ -31,7 +31,7 @@ const ItemCount = ({ amount }) => {
         <button className="ml-4" onClick={() => navigate("/cart")}>
           Agregar al carrito
         </button>
-        <a href="/">Volver</a>
+        <Link to={"/"}>Volver</Link>
       </div>
     </>
   );
