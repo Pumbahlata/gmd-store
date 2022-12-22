@@ -4,29 +4,27 @@ import CartWidget from "../CartWidget/CartWidget";
 
 const NavBar = () => {
   return (
-    <nav className="flex justify-between items-center w-full bg-slate-300 p-7">
+    <nav className="flex justify-between items-center w-full bg-yellow-300 p-7">
       <Link
         to={"/"}
         alt="logo"
-        className="cursor-pointer text-orange-300 font-medium text-xl "
+        className="cursor-pointer text-black font-medium text-xl "
       >
         GMD STORE
         {/* <img src="/images/logo/logo.png" alt="Logo" /> */}
       </Link>
       <ul className="list-none p-0 flex items-center">
-        <li className="relative mr-7">
+        <li className="relative mr-7  text-red-600">
           <Link to={"/category/Nintendo"}>Nintendo</Link>
         </li>
-        <li className="relative mr-7">
+        <li className="relative mr-7 text-blue-900">
           <Link to={"/category/Playstation"}>Playstation</Link>
         </li>
-        <li className="relative mr-7">
+        <li className="relative mr-7 text-green-600">
           <Link to={"/category/Xbox"}>Xbox</Link>
         </li>
         <li className="relative mr-7">
-          <Link className="text-black" to={"/cart"}>
-            <CartWidget />
-          </Link>
+          <CartWidget />
         </li>
       </ul>
     </nav>

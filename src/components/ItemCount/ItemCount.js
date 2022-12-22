@@ -1,37 +1,26 @@
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-
-const ItemCount = ({ amount }) => {
-  const [count, setCount] = useState(0);
-  const navigate = useNavigate();
-
+const ItemCount = ({ count, amount, setCant }) => {
   return (
     <>
-      <div className="">
+      <div className="flex mt-10 w-4/5 bg-gray-200 rounded">
         <button
-          className=" border-4 border-solid rounded text-lg"
-          disabled={count <= 0}
-          onClick={() => setCount(count - 1)}
+          className="flex justify-center items-center p-2 w-2/5 h-full bg-blue-600 text-white"
+          disabled={count <= 1}
+          onClick={() => setCant(-1)}
         >
           -
         </button>
         <input
-          className="ml-4 mr-4 h-1/2 text-center"
+          className="flex justify-center text-center"
           value={count}
-          onChange=""
           readOnly
         ></input>
         <button
-          className="border-4 border-solid rounded text-lg"
+          className="flex justify-center items-center p-2 w-2/5 h-full bg-blue-600 text-white"
           disabled={count >= amount}
-          onClick={() => setCount(count + 1)}
+          onClick={() => setCant(1)}
         >
           +
         </button>
-        <button className="ml-4" onClick={() => navigate("/cart")}>
-          Agregar al carrito
-        </button>
-        <Link to={"/"}>Volver</Link>
       </div>
     </>
   );

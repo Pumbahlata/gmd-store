@@ -5,7 +5,6 @@ export const items = [
     description: "Juego físico The legend of Zelda Breath of the Wild",
     imageUrl:
       "https://http2.mlstatic.com/D_NQ_NP_951591-MLA40862922196_022020-O.webp",
-    alt: "The Legend of Zelda Breath of the Wild",
     category: "Nintendo",
     price: 10000,
     stock: 3,
@@ -16,7 +15,6 @@ export const items = [
     description: "Juego físico de Pokemon Lets Go Pikachu",
     imageUrl:
       "https://static.wikia.nocookie.net/espokemon/images/2/20/Car%C3%A1tula_Pok%C3%A9mon_Pikachu.png",
-    alt: "Pokemon Lets Go Pikachu",
     category: "Nintendo",
     price: 10000,
     stock: 5,
@@ -27,7 +25,6 @@ export const items = [
     description: "Juego físico de Super Smash Bros Ultimate",
     imageUrl:
       "https://http2.mlstatic.com/D_NQ_NP_959080-MLA28919972582_122018-O.webp",
-    alt: "Super Smash Bros Ultimate",
     category: "Nintendo",
     price: 10000,
     stock: 0,
@@ -38,7 +35,6 @@ export const items = [
     description: "Juego físico de Village Resident Evil",
     imageUrl:
       "https://http2.mlstatic.com/D_NQ_NP_852857-MLA52449995191_112022-O.webp",
-    alt: "Village Resident Evil",
     category: "Playstation",
     price: 10000,
     stock: 1,
@@ -49,7 +45,6 @@ export const items = [
     description: "Juego digital de Elder Ring Standard Edition",
     imageUrl:
       "https://http2.mlstatic.com/D_NQ_NP_698579-MLA51178347605_082022-O.webp",
-    alt: "Elder Ring Standard Edition",
     category: "Playstation",
     price: 10000,
     stock: 2,
@@ -60,7 +55,6 @@ export const items = [
     description: "Juego físico God of War Ragnarok",
     imageUrl:
       "https://http2.mlstatic.com/D_NQ_NP_781639-MLA52332049318_112022-O.webp",
-    alt: "Camiseta Japón",
     category: "Playstation",
     price: 10000,
     stock: 2,
@@ -71,7 +65,6 @@ export const items = [
     description: "Juego físico The Last of Us Parte 1",
     imageUrl:
       "https://http2.mlstatic.com/D_NQ_NP_981861-MLA51427398809_092022-O.webp",
-    alt: "The Last of Us Parte 1",
     category: "Playstation",
     price: 10000,
     stock: 3,
@@ -79,10 +72,9 @@ export const items = [
   {
     id: 8,
     name: "Dragon Ball FighterZ",
-    description: "Juego físico ",
+    description: "Juego físico de Dragon Ball FighterZ",
     imageUrl:
       "https://http2.mlstatic.com/D_NQ_NP_702428-MLA44367309396_122020-O.webp",
-    alt: "Dragon Ball FighterZ",
     category: "Xbox",
     price: 10000,
     stock: 3,
@@ -93,7 +85,6 @@ export const items = [
     description: "Juego físico Just Dance 2022",
     imageUrl:
       "https://http2.mlstatic.com/D_NQ_NP_764692-MLA49912906547_052022-O.webp",
-    alt: "Just Dance 2022",
     category: "Xbox",
     price: 10000,
     stock: 1,

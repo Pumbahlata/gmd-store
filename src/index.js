@@ -5,10 +5,26 @@ import reportWebVitals from "./reportWebVitals";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./router";
 
+import { initializeApp } from "firebase/app";
+import { CartContextProvider } from "./context/CartContext";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDoK04UouNOLIcufNbJVmYL8u30iSGUQII",
+  authDomain: "gmd-store.firebaseapp.com",
+  projectId: "gmd-store",
+  storageBucket: "gmd-store.appspot.com",
+  messagingSenderId: "491829389450",
+  appId: "1:491829389450:web:c93000f876f0089875e573",
+};
+
+initializeApp(firebaseConfig);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CartContextProvider>
+      <RouterProvider router={router} />
+    </CartContextProvider>
   </React.StrictMode>
 );
 
